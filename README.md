@@ -1,68 +1,86 @@
-# 🍰 SweetStore
-
-Sistema completo para loja de doces e confeitaria com Vue.js, Node.js e TypeScript.
-
-## 📋 Visão Geral
-
-**SweetStore** é uma plataforma moderna de e-commerce especializada em doces e confeitaria, oferecendo:
-
-- 🛍️ Catálogo online interativo
-- 🛒 Carrinho de compras inteligente
-- 👤 Sistema de autenticação para clientes
-- 🔧 Painel administrativo completo
-- 📊 Relatórios e analytics
-- 🎨 Design sofisticado e responsivo
+# SweetStore 🍰
+Loja online premium de doces e confeitaria com gestão completa de produtos, pedidos e clientes.
 
 ## 🏗️ Arquitetura
+Backend
+- Framework: Fastify + TypeScript
+- ORM: Prisma
+- Banco: PostgreSQL
+- Autenticação: JWT
+- Arquitetura: MVC orientada a objetos
 
-- **Frontend**: Vue.js 3 + TypeScript + Tailwind CSS
-- **Backend**: Node.js + Fastify + TypeScript
-- **Database**: PostgreSQL + Prisma ORM
-- **Auth**: JWT
-- **Deploy**: AWS Lambda (Serverless)
-- **Design**: Figma para prototipação e UI Kit
+Frontend
+- Framework: Vue 3 + TypeScript
+- Styling: Tailwind CSS
+- State Management: Pinia
+- HTTP Client: Axios
 
-## 📁 Estrutura do Projeto
+## 🚀 Começando
+Pré-requisitos
+- Node.js 18+
+- PostgreSQL
+- Git
 
-sweetstore/
+Instalação
 
-├── frontend/ # Aplicação Vue.js
+bash
 
-├── backend/ # API Node.js + Fastify
+    # Clone o repositório
+    git clone <repo-url>
+    cd sweetstore
 
-├── docs/ # Documentação técnica
+    # Backend
+    cd sweetstore-backend
+    npm install
+    npm run dev
 
-├── design/ # Assets do Figma e recursos visuais
+    # Frontend
+    cd ../sweetstore-frontend
+    npm install
+    npm run dev
 
-└── .github/ # CI/CD workflows
+## 📋 Funcionalidades
+- [x] Estrutura base do projeto
+- [ ] Configuração do backend (Fastify + TypeScript)
+- [ ] Configuração do frontend (Vue 3 + TypeScript)
+- [ ] Sistema de autenticação
+- [ ] CRUD de produtos
+- [ ] Carrinho de compras
+- [ ] Painel administrativo
+- [ ] Testes automatizados
+- [ ] Deploy
 
-## 🚀 Status do Desenvolvimento
+## 🎨 Design System
+O projeto utiliza um design system baseado no Figma com:
 
-[x] Setup inicial do repositório
-[ ] Configuração do backend
-[ ] Configuração do frontend
-[ ] Design no Figma
-[ ] Integração e testes
-[ ] Deploy e documentação
-## 🎨 Design & Identidade Visual
+- [ ] Paleta de cores sofisticada
+- [ ] Tipografia moderna
+- [ ] Componentes reutilizáveis
+- [ ] Guidelines de acessibilidade
 
-Em desenvolvimento: Link para o projeto no Figma será adicionado em breve.
-
-Paleta de cores planejada:
-
-Off-white: #FAF7F2
-Bege sofisticado: #C5B9A7
-Dourado claro: #B58E5A
-Rosé maduro: #96546A
-Azul acinzentado: #6A7687
 ## 📚 Documentação
+- Arquitetura do Sistema
+- Guia de Contribuição
+- API Documentation
 
-A documentação técnica completa estará disponível na pasta docs/ conforme o desenvolvimento avança.
+## 🧪 Testes
+bash
 
-## 👥 Desenvolvimento
+    # Backend
+    cd sweetstore-backend
+    npm run test
+    npm run test:e2e
 
-Desenvolvedor: Cleyton Seles
+    # Frontend
+    cd sweetstore-frontend
+    npm run test:unit
+    npm run test:e2e
 
-Repositório: https://github.com/CleytonSeles/sweetstore
+## 📦 Deploy
+[Instruções de deploy serão adicionadas]
 
-Projeto em desenvolvimento ativo - Última atualização: Agosto 2025
+## 🤝 Contribuindo
+1. Siga os padrões de commit semântico
+2. Utilize TypeScript e POO
+3. Mantenha os testes atualizados
+4. Documente mudanças significativas
